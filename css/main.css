@@ -5,12 +5,35 @@
 *, *::before, *::after{
   box-sizing: border-box;
 }
+/* 숨김 콘텐츠 */
+.a11y-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0,0,0,0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
 /* CSS Module */
 /* float 이슈를 해결하기 위한 CSS 선언 */
 .clearfix::after{
   display: block;
   content: "";
   clear: both;
+}
+/* 기본 설정 */
+a{
+  text-decoration: none;
+  color: inherit;
+}
+html{
+  font-size: 10px;
+}
+body{
+  font-size: 1.4rem;
+  color: #181818;
+  background-color: #fff;
 }
 .container{
   background-color: silver;
@@ -24,8 +47,41 @@
   margin: 0 auto;
 }
 .header{
-  background-color: yellow;
-  height: 10vh;
+  background-color: #fff;
+  border-radius: 0 0  15px 15px;
+  padding: 0 30px;
+  position: relative;
+}
+/* 로고 */
+.logo{
+  margin: 0;
+  position: absolute;
+  top: 45px;
+  left: 65px;
+}
+/* 멤버 링크 */
+.member{
+  margin: 0;
+  padding: 2px 0;
+  list-style-type: none;
+  text-align: right;
+  font-size: 0;
+  position: relative;
+  right: -10px;
+}
+.member li, .member a{
+  display: inline-block;
+}
+.member li{
+  font-size: 1.4rem;
+}
+.member li:nth-child(n+2)::before{
+  content: ":";
+  margin: 0 2px;
+}
+.member a{
+  text-transform: uppercase;
+  padding: 8px 10px;
 }
 .visual{
   background-color: lime;
