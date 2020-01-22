@@ -104,12 +104,14 @@ body{
   /* box-shadow: 0 -10px 0 0 #000; */
 }
 .menu-item{
+  outline: none;
   position: relative;
   float: left;
   border-left: 2px solid rgba(255,255,255,0.3);
 }
 
 .menu-button{
+  cursor: pointer;
   color: #fff;
   font-weight: 700;
   font-size: 1.6rem;
@@ -129,20 +131,17 @@ body{
   content: "";
   display: block;
   border-top: 2px solid #000;
-  background-color: green;
 }
 .submenu{
   list-style: none;
   padding-left: 0;
   margin: 0;
   position: absolute;
-  background-color: lightgreen;
   display: none;
   white-space: nowrap;
   top: 47px;
 }
-.menu li:nth-child(1) .submenu{
-  background-color: pink;
+.menu-act .submenu{
   display: block;
 }
 .menu li:nth-child(-n+3) .submenu{
@@ -157,7 +156,6 @@ body{
 }
 .submenu a{
   padding: 8px 10px;
-  background-color: yellow;
 }
 .visual{
   background-color: lime;
