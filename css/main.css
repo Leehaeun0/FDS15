@@ -313,7 +313,19 @@ body{
 }
 /* 유효성 검사 배너 */
 .validation-list{
-  background: yellow;
+  margin: 25px 0 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+.validation-list a{
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 35px;
+  margin-top: 10px;
+  padding: 7px 10px 8px 45px;
+  background: url(./images/validation_icon.png) no-repeat 20px 50%,
+  #ccc 
+  linear-gradient(180deg, #bbb, #eee);
 }
 /* 슬로건 */
 .slogan{
