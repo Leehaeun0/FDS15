@@ -311,10 +311,16 @@ body{
   display: inline-block;
   padding: 8px 0;
 }
+/* 유효성 검사 배너 */
+.validation-list{
+  background: yellow;
+}
+/* 슬로건 */
 .slogan{
   background-color: orange;
   height: 10vh;
 }
+/* 푸터 */
 .footer-bg{
   background-color: purple;
   width: 100vw;
