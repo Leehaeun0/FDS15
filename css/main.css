@@ -315,7 +315,6 @@ body{
 .validation-list{
   margin: 25px 0 0 0;
   padding-left: 0;
-  list-style: none;
 }
 .validation-list a{
   display: block;
@@ -327,6 +326,56 @@ body{
   #ccc 
   linear-gradient(180deg, #bbb, #eee);
 }
+/* 웹 관련 용어 */
+.term{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-top: 20px;
+  background: #ccc linear-gradient(180deg, #bbb, #eee);
+  padding: 15px;
+}
+.term-heading{
+  margin: 0;
+  font-size: 1.6rem;
+}
+.term-list{
+  margin: 15px 0 0 0;
+}
+.term-list div{
+  margin-top: 15px;
+}
+.term-list dd{
+  margin-left: 0;
+}
+.term-list-subject, .term-list-brief{
+  width: 145px;
+  float: right;
+}
+.term-list-subject{
+  color: #296897;
+  font-weight: 400;
+}
+.term-list-thumbnail{
+  float: left;
+}
+.term-list-thumbnail img{
+  vertical-align: top;
+}
+.term-list-brief{
+  margin-top: 5px;
+  line-height: 1.6;
+}
+.change-layout .term-list-subject, .change-layout .term-list-brief{
+  float: left;
+}
+.change-layout .term-list-thumbnail{
+  float: right;
+}
+/* 검색 폼 */
+.search-form{
+  background: yellow;
+}
+
 /* 슬로건 */
 .slogan{
   background-color: orange;
