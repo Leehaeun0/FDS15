@@ -402,18 +402,17 @@ body{
 }
 /* 공지사항 및 자료실 */
 .board{
-  background-color: yellow;
   width: 380px;
   position: relative;
   padding-top: 45px;
 }
-.notice-list, .notice-more, .pds-list, .pds-more{
+/* .notice-list, .notice-more, .pds-list, .pds-more{
   display: none;
 }
 .board-act .notice-list, .board-act .notice-more,
 .board-act .pds-list, .board-act .pds-more{
   display: block !important;
-}
+} */
 .tab{
   font-weight: 400;
   margin: 0;
@@ -441,13 +440,11 @@ body{
   left: 73px;
 }
 .notice-list, .pds-list{
-  background-color: pink;
   margin: 0;
   padding-left: 0;
   list-style: none;
 }
 .notice-list li, .pds-list li{
-  background-color: orange;
   margin-bottom: 8px;
   /* overflow: hidden; */
   display: flex;
@@ -456,20 +453,18 @@ body{
 }
 .notice-list li::before, .pds-list li::before{
   /* float: left; */
-  background-color: tomato;
 }
 .notice-list a, .pds-list a{
-  background-color: lime;
   /* float: left;
   width: 285px; */
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  flex-grow: 1;
 }
 .notice-list time, .pds-list time{
-  background-color: skyblue;
   /* float: right; */
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .notice-more, .pds-more{
