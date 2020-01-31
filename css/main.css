@@ -613,7 +613,6 @@ body{
   position: relative;
 }
 .favorite-list{
-  background: yellow;
   margin: 0;
   padding-left: 0;
   list-style: none;
@@ -622,7 +621,6 @@ body{
   counter-increment: number;
   line-height: 1.5;
   margin-top: 5px;
-  background: lime;
   display: flex;
   align-items: center;
   /* position: relative; */
@@ -643,7 +641,6 @@ body{
   vertical-align: middle;
 } */
 .favorite-list a{
-  background: pink;
   flex-grow: 1;
   margin-right: 5px;
 }
@@ -658,7 +655,7 @@ body{
   height: 0;
   padding-top: 11px;
   overflow: hidden;
-  background: orange url(./images/rank.png) no-repeat;
+  background: url(./images/rank.png) no-repeat;
 }
 .favorite-list .stop{
   background-position: 0 50%;
