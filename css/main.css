@@ -546,7 +546,7 @@ body{
   position: relative;
   border-bottom: 1px solid #777;
 }
-.event-heading, .related-heading{
+.event-heading, .related-heading, .favorite-heading{
   margin: 0 0 10px 0;
   font-size: 1.5rem;
 }
@@ -606,6 +606,36 @@ body{
   display: block;
   line-height: 20px;
   text-indent: 1em;
+}
+/* 인기 사이트 */
+.favorite{
+  margin-top: 20px;
+}
+.favorite-list{
+  background: yellow;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.favorite-list li{
+  counter-increment: number;
+  line-height: 1.5;
+  margin-top: 5px;
+  background: lime;
+}
+.favorite-list li::before{
+  content: counter(number);
+  display: inline-block;
+  color: #fff;
+  background: #888;
+  border-radius: 2px;
+  padding: 2px 10px;
+  font-size: 1.2rem;
+  margin-right: 5px;
+  /* content: attr(class); */
+}
+.favorite-list a{
+  background: pink;
 }
 /* 슬로건 */
 .slogan{
