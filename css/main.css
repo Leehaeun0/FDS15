@@ -546,7 +546,7 @@ body{
   position: relative;
   border-bottom: 1px solid #777;
 }
-.event-heading{
+.event-heading, .related-heading{
   margin: 0 0 10px 0;
   font-size: 1.5rem;
 }
@@ -563,6 +563,7 @@ body{
   right: 0;
 }
 .btn-event-prev, .btn-event-next{
+  cursor: pointer;
   width: 19px;
   height: 18px;
   border: 0;
@@ -575,7 +576,36 @@ body{
 .btn-event-next{
   background-position: 100% 0;
 }
-
+.related{
+  padding-top: 10px;
+}
+.related-list{
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  border: 1px solid #888;
+  border-radius: 5px;
+  background: #fff;
+  height: 27px;
+  overflow: hidden;
+  transition-property: height, padding;
+  transition-duration: 400ms;
+  transition-delay: 200ms, 0ms;
+  transition-timing-function: ease-in-out;
+}
+.related-list:hover, .related-list:focus{
+  height: 147px;
+  padding: 10px 0;
+}
+.related-list li{
+  height: 27px;
+  padding: 2px;
+}
+.related-list a{
+  display: block;
+  line-height: 20px;
+  text-indent: 1em;
+}
 /* 슬로건 */
 .slogan{
   background-color: orange;
