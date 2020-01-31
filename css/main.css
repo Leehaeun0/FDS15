@@ -158,7 +158,6 @@ body{
   padding: 8px 10px;
 }
 .visual{
-  background-color: lime;
   height: 120px;
   position: relative;
 }
@@ -177,7 +176,6 @@ body{
 .visual-text{
   font-family: Georgia, 'Times New Roman', Times, serif;
   display: inline-block;
-  background-color: yellow;
   animation-name: textAni;
   animation-duration: 3000ms;
   animation-fill-mode: forwards;
@@ -405,14 +403,15 @@ body{
   width: 380px;
   position: relative;
   padding-top: 45px;
+  margin-top: 20px;
 }
-/* .notice-list, .notice-more, .pds-list, .pds-more{
+.notice-list, .notice-more, .pds-list, .pds-more{
   display: none;
 }
 .board-act .notice-list, .board-act .notice-more,
 .board-act .pds-list, .board-act .pds-more{
   display: block !important;
-} */
+}
 .tab{
   font-weight: 400;
   margin: 0;
@@ -478,6 +477,7 @@ body{
 }
 /* 새소식 */
 .news{
+  margin-top: 20px;
   position: relative;
 }
 .news::before{
@@ -563,6 +563,7 @@ body{
   right: 0;
 }
 .btn-event-prev, .btn-event-next{
+  vertical-align: top;
   cursor: pointer;
   width: 19px;
   height: 18px;
